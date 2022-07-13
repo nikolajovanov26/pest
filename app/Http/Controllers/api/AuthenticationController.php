@@ -30,6 +30,8 @@ class AuthenticationController extends Controller
             'password' => $request->password,
             'scope' => '',
         ]);
+        
+        dd($response->json());
          
         return $response->json();
     }
